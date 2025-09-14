@@ -13,3 +13,5 @@ Some functions in log_death are:
 6. Filtering input data from special robots, such as (hitting robots with additional critical damage) through attack_buffer.json
 
 This log_attack is a special feature of the basher robot. This file contains a special data request for the skull basher skill, which allows the basher robot to receive additional damage and a 2-second stun effect. This data must be injected into the JSON file. It can then be read by log_death for each hit event.
+
+This robot_status function indicates whether the robot and turret are active or inactive. If the robot is hit and freezes for a certain number of seconds or its health is nearly depleted, it will send a death signal.
